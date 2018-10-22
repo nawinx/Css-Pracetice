@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+
+}
+
+.container{
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    top: 10%;
+    width:340px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 640px;
+    transform: rotate(-30deg) skew(25deg) scale(0.8);
+    transition: 0.5s;
+}
+
+img{
+    position: absolute;
+    height: 100%;
+}
+
+.container:hover img:nth-child(4) {
+    transform: translate(100px, -100px);
+    
+}
+
+.container:hover img:nth-child(3) {
+    transform: translate(80px, -80px);
+    opacity: 0.8;
+}
+
+.container:hover img:nth-child(2) {
+    transform: translate(50px, -50px);
+    opacity: 0.6;
+}
+
+.container:hover img:nth-child(1) {
+    transform: translate(20px, -20px);
+    opacity: 0.4;
+}
